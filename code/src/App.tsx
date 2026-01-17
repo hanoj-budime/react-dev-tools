@@ -28,19 +28,22 @@ export default function App() {
       icon: '🔐',
       title: 'Encoder/Decoder',
       description: 'Encode and decode text using various formats including URL, Base64, HTML entities, and more.',
-      url: 'https://hanoj-budime.github.io/react-encoder-decoder-editor/'
+      url: 'https://hanoj-budime.github.io/react-encoder-decoder-editor/',
+      beta: false
     },
     {
       icon: '📋',
       title: 'JSON Viewer & Editor',
       description: 'View, format, validate, and edit JSON data with syntax highlighting and collapsible tree view.',
-      url: 'https://hanoj-budime.github.io/react-json-viewer-editor/'
+      url: 'https://hanoj-budime.github.io/react-json-viewer-editor/',
+      beta: false
     },
     {
       icon: '🪪',
-      title: 'Cognito Hosted UI Editor ( Preview )',
+      title: 'Cognito Hosted UI Editor',
       description: 'Visually edit and generate AWS Cognito Hosted UI OAuth/OIDC URLs with support for response types, scopes, redirect URIs, and identity providers.',
       url: 'https://hanoj-budime.github.io/react-cognito-hosted-ui-editor/',
+      beta: true
     }
   ];
 
@@ -111,7 +114,14 @@ export default function App() {
                   <div className="text-4xl sm:text-4xl lg:text-5xl">{tool.icon}</div>
                 </div>
                 <div className="flex-1">
-                  <h2 className="text-base sm:text-lg lg:text-xl font-semibold mb-1 sm:mb-2">{tool.title}</h2>
+                  <div className="flex items-center gap-2 mb-1 sm:mb-2">
+                    <h2 className="text-base sm:text-lg lg:text-xl font-semibold">{tool.title}</h2>
+                    {tool.beta && (
+                      <span className="px-2 py-0.5 text-xs font-semibold rounded-full bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 border border-blue-200 dark:border-blue-700">
+                        BETA
+                      </span>
+                    )}
+                  </div>
                   <p className="text-sm sm:text-base opacity-80 leading-relaxed mb-2">{tool.description}</p>
                   <span className="inline-flex items-center gap-1.5 text-blue-600 dark:text-blue-400 font-medium text-sm hover:gap-2 transition-all">
                     Open →
