@@ -35,6 +35,12 @@ export default function App() {
       title: 'JSON Viewer & Editor',
       description: 'View, format, validate, and edit JSON data with syntax highlighting and collapsible tree view.',
       url: 'https://hanoj-budime.github.io/react-json-viewer-editor/'
+    },
+    {
+      icon: '🪪',
+      title: 'Cognito Hosted UI Editor ( Preview )',
+      description: 'Visually edit and generate AWS Cognito Hosted UI OAuth/OIDC URLs with support for response types, scopes, redirect URIs, and identity providers.',
+      url: 'https://hanoj-budime.github.io/react-cognito-hosted-ui-editor/',
     }
   ];
 
