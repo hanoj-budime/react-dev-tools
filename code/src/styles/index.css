@@ -1,0 +1,28 @@
+/* postcss-cli */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.code-font {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Segoe UI Mono", monospace;
+}
+
+/* Create a class with text-gradient with following styles: bg-gradient-to-br from-primary-500 to-primary-600 bg-clip-text text-transparent */
+/* .text-gradient {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  --tw-gradient-from: var(--color-primary-500);
+  --tw-gradient-to: var(--color-primary-600);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+} */
