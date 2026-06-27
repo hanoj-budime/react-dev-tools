@@ -40,7 +40,7 @@ export default function App() {
     },
     {
       icon: '🪪',
-      title: 'Cognito Hosted UI Editor',
+      title: 'Cognito Hosted UI - Editor',
       description: 'Visually edit and generate AWS Cognito Hosted UI OAuth/OIDC URLs with support for response types, scopes, redirect URIs, and identity providers.',
       url: 'https://hanoj-budime.github.io/react-cognito-hosted-ui-editor/',
       beta: false
